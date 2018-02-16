@@ -1,0 +1,65 @@
+
+$content-gap: 1rem;
+
+.oc-fluid-columns {
+  &-container {
+    display: inline-block;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-child-item {
+    padding-bottom: $content-gap;
+    break-inside: avoid;
+    page-break-inside: avoid; /* for Firefox */
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Narrow screen
+@media screen and (max-width: 980px) {
+  .oc-fluid-columns-column {
+    column-gap: $content-gap;
+    column-count: 1;
+  }
+}
+
+// Medium screen
+@media screen and (min-width: 981px) and (max-width: 1650px) {
+  .oc-fluid-columns-column {
+    column-gap: $content-gap;
+    column-count: 2;
+  }
+}
+
+// Wide screen
+@media screen and (min-width: 1651px) and (max-width: 1980px) {
+  .oc-fluid-columns-column {
+      column-gap: $content-gap;
+      column-count: 3;
+  }
+}
+
+// 4K screen
+@media screen and (min-width: 1981px) {
+  .oc-fluid-columns-column {
+      column-gap: $content-gap;
+      column-count: 4;
+  }
+}
+
+@media screen\0 {
+  .oc-fluid-columns-child-item {
+    margin-bottom: -6px; /* needed for IE11, which adds mysterious margins to inline-blocks */
+  }
+}
+
+@-moz-document url-prefix() { // for firefox
+  .oc-fluid-columns-container {
+    height: unset;
+  }
+}
