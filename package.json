@@ -5,7 +5,7 @@
   "private": false,
   "license": "MIT",
   "description": "OpusCapita react layouts",
-  "main": "lib/react-layouts.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rimraf lib && cross-env NODE_ENV=production BUILD_ENV=es babel ./src -d lib --copy-files",
     "examples": "cross-env NODE_ENV=production webpack --config webpack.config.js",
