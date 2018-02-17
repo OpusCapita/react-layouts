@@ -3,6 +3,7 @@
 import React from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { List } from 'immutable';
+
 import './fluid-columns.scss';
 
 const FluidColumns = props => (
