@@ -23,6 +23,10 @@
     "expect": true,
     "sinon": true
   },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
   "env": {
     "es6": true,
     "browser": true,
@@ -34,7 +38,6 @@
     "import/no-extraneous-dependencies": ["error", {
       "devDependencies": true,
       "optionalDependencies": true,
-      "peerDependencies": true}],
-    "react/prefer-stateless-function": "off"
+      "peerDependencies": true}]
   }
 }

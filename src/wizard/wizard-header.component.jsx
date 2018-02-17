@@ -4,7 +4,7 @@ import { ControlLabel } from 'react-bootstrap';
 
 import { Icon } from '@opuscapita/react-icons';
 
-import './wizard-header.component.scss';
+import './wizard-header.scss';
 
 
 export default class WizardHeader extends React.PureComponent {

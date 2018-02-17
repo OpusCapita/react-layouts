@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 import { Icon } from '@opuscapita/react-icons';
 
-import './wizard-footer.component.scss';
+import './wizard-footer.scss';
 
 
 export default class WizardFooter extends React.PureComponent {
