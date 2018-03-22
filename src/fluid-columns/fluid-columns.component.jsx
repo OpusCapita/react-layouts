@@ -1,8 +1,5 @@
-/* eslint-disable react/no-typos */
-
 import React from 'react';
-import ImmutablePropTypes from 'react-immutable-proptypes';
-import { List } from 'immutable';
+import PropTypes from 'prop-types';
 
 import './fluid-columns.scss';
 
@@ -21,11 +18,11 @@ const FluidColumns = props => (
 );
 
 FluidColumns.propTypes = {
-  children: ImmutablePropTypes.list,
+  children: PropTypes.node,
 };
 
 FluidColumns.defaultProps = {
-  children: List(),
+  children: [],
 };
 
 export default FluidColumns;
